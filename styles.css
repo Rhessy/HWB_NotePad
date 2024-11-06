@@ -55,3 +55,24 @@ a{
     background-image: url("/images/Js.svg");
     background-size: contain;
 }
+
+
+.codeExample{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.codeBlock{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.codeLine{
+    background-color: #717171;
+    align-self: auto;
+}

@@ -4,6 +4,7 @@
     justify-content:space-between;
     height: 50px;
     background-color:  #717171;
+    padding: 0px 20px 0px;
    
    
 }
@@ -13,10 +14,44 @@
     justify-content: flex-end;
     gap: 50px;
     flex-grow: 1;
+    padding: 0px 20px 0px;
 
 }
  
 a{
     text-decoration: none;
     color: #121212;
+}
+
+.showcase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    background-color: #575757;
+    padding: 100px 300px 100px;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.html{
+    background-image: url("/images/Html.svg");
+    background-size: contain;
+}
+
+.css{
+    background-image: url("/images/Css.svg");
+    background-size: contain;
+
+}
+.git{
+    background-image: url("/images/Github.svg");
+    background-size: contain;
+}
+.js{
+    background-image: url("/images/Js.svg");
+    background-size: contain;
 }

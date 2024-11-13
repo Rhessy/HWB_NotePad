@@ -1,3 +1,7 @@
+body{
+    background-color: hsl(180, 7%, 70%);
+}
+
 .navbar{
     display: flex;
     align-items:center;
@@ -62,17 +66,85 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px 0px 20px;
+    
 }
 
 .codeBlock{
-    background-color: aliceblue;
+    background-color: #F1F2F6;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.side{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #717171;
+    width: 20px;
+
 }
 
 .codeLine{
-    background-color: #717171;
     align-self: auto;
+}
+
+.codeSnip:focus{
+    border-style: none;
+    outline: none;
+    background-color: #f1f4f4;
+    
+}
+
+.codeSnip{
+    border-style: none;
+    background-color: #F1F2F4;
+    width: 400px;
+    
+}
+.codeBlock .toggles{
+    align-self:flex-start;
+    gap: 5px;
+}
+.copy{
+    background-image: url("images/Copy.svg");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    border-style: none;
+}
+.copy:hover{
+    height: 22px;
+    width: 22px;
+}
+
+.edit:hover{
+    height: 22px;
+    width: 22px;
+}
+
+.save:hover{
+    height: 22px;
+    width: 22px;
+}
+
+.edit{
+    background-image: url("images/Edit.svg");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    border-style: none;
+}
+
+.save{
+    background-image: url("images/Save.svg");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    border-style: none;
 }

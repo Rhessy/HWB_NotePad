@@ -1,3 +1,62 @@
+@media (max-width: 500px){
+
+    /*.links{
+        
+        height: 50px;
+        width:  50px;
+        background-size: cover;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: none;
+        padding: 0px 20px 0px;
+        flex-basis: 50px;
+        flex-shrink: 0;
+    }*/
+
+    .hamburger{
+        background-image: url('images/Hamburger.svg');
+        background-size: cover;
+        height: 50px;
+        width:  50px;
+    }
+
+
+    .links a {
+     
+        display: none;
+    }
+
+    .navbar{
+        padding: 0px 0px;
+    }
+
+
+
+
+
+}
+
+
+@media (min-width: 501px){
+    .hamburger{
+        display: none;
+    }
+
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+        flex-grow: 1;
+        padding: 0px 20px 0px;
+    
+    }
+
+    .navbar{
+        padding: 0px 60px 20px 0px;
+    }
+    
+}
 body{
     background-color: hsl(180, 7%, 70%);
 }
@@ -8,19 +67,12 @@ body{
     justify-content:space-between;
     height: 50px;
     background-color:  #717171;
-    padding: 0px 20px 0px;
+    gap: 20px;
+    overflow: hidden;
    
    
 }
-.links{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
-    flex-grow: 1;
-    padding: 0px 20px 0px;
 
-}
  
 a{
     text-decoration: none;
@@ -118,7 +170,7 @@ a{
     background-size: cover;
     border-style: none;
 }
-.copy:hover{
+.copy:hover .edit .save{
     height: 22px;
     width: 22px;
 }

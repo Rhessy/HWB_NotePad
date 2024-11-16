@@ -49,8 +49,13 @@
         padding: 0px 0px;
     }
 
-
-
+    .codeBlock{
+        width: 100%;
+    }
+    
+    .codeSnip{
+        width: 70%;
+    }
 
 
 }
@@ -74,6 +79,15 @@
     .navbar{
         padding: 0px 60px 20px 0px;
     }
+
+    .codeBlock{
+        width: 800px;
+    }
+
+    .codeSnip{
+        width: 85%;
+    }
+   
     
 }
 body{
@@ -100,11 +114,10 @@ a{
 
 .showcase{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 400px;
     background-color: #575757;
-    padding: 100px 300px 100px;
 }
 
 .icon{
@@ -144,11 +157,10 @@ a{
 .codeBlock{
     background-color: #F1F2F6;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 5px;
     border-radius: 5px;
     overflow: hidden;
+    flex-shrink:1;
 }
 
 .side{
@@ -157,7 +169,7 @@ a{
     justify-content: center;
     align-items: center;
     background-color: #717171;
-    width: 20px;
+    flex-grow: 1;
 
 }
 
@@ -175,12 +187,13 @@ a{
 .codeSnip{
     border-style: none;
     background-color: #F1F2F4;
-    width: 400px;
-    
+    flex-grow: 7;
+
 }
 .codeBlock .toggles{
     align-self:flex-start;
     gap: 5px;
+    flex-grow: 3;
 }
 .copy{
     background-image: url("images/Copy.svg");
@@ -219,3 +232,4 @@ a{
     background-size: cover;
     border-style: none;
 }
+

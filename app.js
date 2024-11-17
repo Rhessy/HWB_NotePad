@@ -4,6 +4,11 @@ let edit = document.querySelector('.edit');
 let copy = document.querySelector('.copy');
 let hamburger = document.querySelector('.hamburger');
 let hamburgerLine = document.querySelectorAll('.hamburgerLine');
+let side = document.querySelector('.side');
+let codeBlock = document.querySelector('.codeBlock');
+let codeLine = document.querySelector('.codeLine');
+
+
 
 hamburger.addEventListener('mouseover', ()=>{
 
@@ -32,7 +37,7 @@ console.log(codeSnip.readOnly);
 
 
 edit.addEventListener('click', ()=>{
-    codeSnip.readOnly = false;
+    codeSnip.readOnly = false
     console.log(codeSnip.readOnly);
 });
 
@@ -44,3 +49,32 @@ copy.addEventListener('click', ()=>{
     alert("Copied the text: " + codeSnip.value);
 })
 
+codeSnip.addEventListener('input', ()=>{
+
+    let temp = calcLines();
+    
+
+})
+
+   
+let codeSnipLineHeight = 20; // This should match the line-height in the CSS
+
+
+function calcLines(height, numlines){
+
+    let codeSnipHeight = codeSnip.scrollHeight; // Get the scroll height of the textarea
+    let numberOfLines = Math.floor(codeSnipHeight/codeSnipLineHeight);
+
+    let newLine = document.createElement('p');
+    newLine.className = 'codeLine';
+    newLine.textContent = '2';
+    side.appendChild(newLine);
+    codeBlock.style.height = `${codeSnipHeight}px`;
+
+    let codeHeight = codeSnipHeight/numberOfLines;
+
+    codeLine.style.height = `${codeHeight}px`;
+
+
+
+}

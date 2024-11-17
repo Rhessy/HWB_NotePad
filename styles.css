@@ -160,21 +160,24 @@ a{
     gap: 5px;
     border-radius: 5px;
     overflow: hidden;
-    flex-shrink:1;
+    height: 40px;
 }
 
 .side{
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #717171;
-    flex-grow: 1;
-
+    flex-shrink: 1;
 }
+
+
 
 .codeLine{
     align-self: auto;
+    margin: 0px;
 }
 
 .codeSnip:focus{
@@ -188,6 +191,8 @@ a{
     border-style: none;
     background-color: #F1F2F4;
     flex-grow: 7;
+    scrollbar-width: none;
+    line-height: 20px;
 
 }
 .codeBlock .toggles{
@@ -232,4 +237,5 @@ a{
     background-size: cover;
     border-style: none;
 }
+
 

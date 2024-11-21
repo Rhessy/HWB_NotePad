@@ -33,14 +33,21 @@
                 </P>
             </div>
             <div class="codeBlock">
-                <div class ="side"><p class="codeLine">1</p></div>
-                <textarea class="codeSnip">  
+                <div class ="side">
+                    <p class="codeLine">1</p>
+                    <p class="codeLine">2</p>
+                </div>
+                <textarea class="codeSnip" oninput="formatTextAsRequired()">  
                 </textarea>
                 <div class ="toggles">
                     <button class="copy"></button>
                     <button class="save"></button>
                     <button class="edit"></button>
                 </div>
+            </div>
+            <div class="values">
+                <p class="characterCount"></p>
+                <p class="lineCount"></p>
             </div>
 
         </div>

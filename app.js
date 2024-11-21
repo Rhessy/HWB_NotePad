@@ -90,7 +90,7 @@ function formatTextAsRequired(){
   let row;
   let lineBreakCount=0;
   let characterCount=0;
-  for (row = 0; row < totalRows; ++row) {
+  for (row = 1; row < totalRows; ++row) {
     if(inputAsRows[row].length>charactersPerLine){ //1b DETECT IF TEXT PER LINE IS TOO LONG 
       if (inputAsRows[row+1] === undefined) {
         inputAsRows[row+1]="";// the row did not exist
@@ -171,22 +171,22 @@ function createPElements(){
 if (side.childElementCount < numOfRow)
 {
  
-  
+  alert("We made it before 3!!  number of rows =" +numOfRow);
         let p = document.createElement('p');
-        p.className = `codeLine p${numOfRow+1}`;
-        p.textContent = `${numOfRow+1}`;
+        p.className = `codeLine p${side.childElementCount+1}`;
+        p.textContent = `${side.childElementCount+1}`;
         side.appendChild(p);
         console.log("This is p[i]" + pElements[numOfRow]);
-        codeBlock.style.height = `${20+numOfRow*10}px`;
+        codeBlock.style.height = `${20+numOfRow*20}px`;
     
     console.log("p is this long"+side.childElementCount);
 }
 else if(side.childElementCount > numOfRow){
-  console.log("This is p[i]" + p[i]);
-  for (i=pElements.length; i > numOfRow; i--)
+  console.log("we made it to else if");
+  for (i=side.childElementCount; i > numOfRow; i--)
     {
-      console.log("This is p[i]" + p[i]);
-        p[i].remove();
+        document.querySelector(`.p${i}`).remove();
+        codeBlock.style.height = `${20+numOfRow*20}px`;
     }
 }
 else{

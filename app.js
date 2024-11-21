@@ -56,7 +56,7 @@ copy.addEventListener('click', ()=>{
 
 /* Adding in code for text area */
 
-let charactersPerLine = 10;
+let charactersPerLine = 30;
 let maxLines = 6;
 let widthPerCharacter = 10;
 let numOfRow;
@@ -156,10 +156,7 @@ function showOutput(){
 
 });
 */
-LinCount.textContent = totalRows;
-charCount.textContent = inputAsOneLine.length;
-console.log(totalRows);
-console.log(characterCount);
+
 
 numOfRow = totalRows;
 createPElements();
@@ -186,7 +183,7 @@ else if(side.childElementCount > numOfRow){
   for (i=side.childElementCount; i > numOfRow; i--)
     {
         document.querySelector(`.p${i}`).remove();
-        codeBlock.style.height = `${20+numOfRow*20}px`;
+        
     }
 }
 else{
